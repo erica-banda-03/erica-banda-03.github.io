@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+<div class="main_container">
+    <header class="header"></header>
+    <section class="logo_content">
+        <div class="logo">
+            <img src="graphics/kappnav-logo.svg" height="144px">
+            <div class="logo_text">        
+                <p id="kappnav-title">kAppNav</p>
+                <p>Kubernetes Application Navigator</p>
+            </div>
+        </div>
+        <div class="button" id="getting_started"><a href="https://github.com/kappnav/README">Get Started</a></div>
+    </section>
+    <section class="description">
+        <p>
+        {{ site.description }}
+        </p>
+        <p>
+        The Kubernetes Application Navigator uses the <a href="https://github.com/kubernetes-sigs/application/blob/master/config/crds/app_v1beta1_application.yaml">Application Custom Resource Definition (CRD)</a> from the <a href="https://github.com/kubernetes-sigs/application">Kubernetes Application SIG</a> as the basis for describing applications.
+        </p>
+    </section>
+    <footer class="footer"></footer>
+</div>
 
-You can use the [editor on GitHub](https://github.com/erica-banda-03/erica-banda-03.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/erica-banda-03/erica-banda-03.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
