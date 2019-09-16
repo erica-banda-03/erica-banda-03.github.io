@@ -7,7 +7,7 @@ html, body {
   display: grid;
   grid-column-gap: 20px;
   grid-template-columns: 1fr 598px 598px 1fr;
-  grid-template-rows: 58px auto 375px 540px 372px 58px;
+  grid-template-rows: 58px auto 320px 540px 385px 58px;
   grid-template-areas: "header  header header header" " . logo_content graphic . " "info info info info" "customizable  customizable customizable customizable" "built_on built_on built_on built_on" "footer  footer footer footer";
   margin: 0px;
   min-height: 100%;
@@ -19,7 +19,7 @@ html, body {
     .main_container {
       grid-template-areas: "header header header" " . logo_content . " " . graphic ." " . info . " " . customizable . " " . built_on . " "footer footer footer";
       grid-template-columns: 80px auto 80px;
-      grid-template-rows: auto;
+      grid-template-rows: 58px auto auto auto auto auto 58px;
       padding: 0px; } }
   @media only screen and (max-width: 798px) {
     .main_container {
@@ -105,7 +105,7 @@ html, body {
 
 .logo_content {
   grid-area: logo_content;
-  padding: 120px 37px 62px 0px; }
+  padding: 100px 37px 62px 0px; }
   @media only screen and (max-width: 598px) {
     .logo_content {
       padding: 60px 0px 0px 0px; } }
@@ -200,7 +200,7 @@ html, body {
   grid-row: 3/4;
   grid-column: 2/4;
   text-align: center;
-  padding: 61px 0px 99px 0px;
+  padding: 60px 0px 50px 0px;
   border-bottom: 1px solid #555555; }
   .info > p {
     margin: 0px; }
@@ -208,7 +208,7 @@ html, body {
     .info {
       grid-row: 4/5;
       grid-column: 2/3;
-      padding: 60px 0px 60px 0px; } }
+      padding-bottom: 60px; } }
   @media only screen and (max-width: 598px) {
     .info {
       grid-column: 2/3;
@@ -243,7 +243,7 @@ html, body {
       grid-row: 5/6;
       grid-column: 2/3;
       justify-self: center;
-      padding: 0px 0px 60px 0px; } }
+      padding-bottom: 50px; } }
   @media only screen and (max-width: 1000px) {
     .customizable {
       grid-template-columns: 1fr 1fr;
@@ -297,10 +297,10 @@ html, body {
   display: grid;
   grid-column-gap: 135px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 185px 99px;
+  grid-template-rows: 185px 100px;
   grid-template-areas: "builton_title builton_title builton_title builton_title" "go kubernetes open_liberty node";
   text-align: center;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   border-top: 1px solid #555555; }
   @media only screen and (max-width: 1250px) {
     .built_on {
