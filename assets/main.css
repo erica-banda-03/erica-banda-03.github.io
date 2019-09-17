@@ -19,13 +19,14 @@ html, body {
     .main_container {
       grid-template-areas: "header header header" " . logo_content . " " . graphic ." " . info . " " . customizable . " " . built_on . " "footer footer footer";
       grid-template-columns: 80px auto 80px;
-      grid-template-rows: 58px auto auto auto auto auto 58px;
+      grid-template-rows: 58px repeat(5, auto) 58px;
       padding: 0px; } }
-  @media only screen and (max-width: 798px) {
+  @media only screen and (max-width: 698px) {
     .main_container {
       grid-template-columns: 20px auto 20px;
-      grid-template-rows: 56px auto auto auto auto auto 56px;
+      grid-template-rows: 56px repeat(5, auto) 56px;
       grid-template-areas: "header header header" " . logo_content . " " . graphic . " ". info . " " . customizable . " " . built_on . " "footer footer footer";
+      grid-column-gap: 0px;
       font-size: 20px;
       line-height: 24px; } }
 
@@ -106,7 +107,7 @@ html, body {
 .logo_content {
   grid-area: logo_content;
   padding: 100px 37px 62px 0px; }
-  @media only screen and (max-width: 598px) {
+  @media only screen and (max-width: 1250px) {
     .logo_content {
       padding: 60px 0px 0px 0px; } }
 
@@ -124,7 +125,7 @@ html, body {
 
 .logo_text {
   font-size: 21px;
-  padding-left: 29px;
+  padding-left: 30px;
   margin-top: 34px; }
   .logo_text > p {
     margin: 0px; }
@@ -134,8 +135,8 @@ html, body {
       line-height: 28px; } }
   @media only screen and (max-width: 480px) {
     .logo_text {
-      font-size: 16px;
-      padding-left: 36px; } }
+      font-size: 14px;
+      padding-left: 15px; } }
 
 #kappnav-title {
   font-size: 72px;
@@ -222,7 +223,7 @@ html, body {
   grid-column: 2/4;
   display: grid;
   grid-column-gap: 60px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 185px auto;
   grid-template-areas: "customizable_title customizable_title customizable_title" "resources actions applications"; }
   .customizable > div > h3 {
@@ -315,6 +316,7 @@ html, body {
       grid-template-areas: "builton_title builton_title" "go kubernetes" "open_liberty node";
       grid-column: 2/3;
       grid-column-gap: 12px;
+      grid-row-gap: 30px;
       padding-bottom: 60px; } }
 
 .builton_title {
@@ -331,14 +333,16 @@ html, body {
       font-size: 50px; } }
   @media only screen and (max-width: 598px) {
     .builton_title {
-      font-size: 36px; } }
+      font-size: 36px;
+      line-height: 38px; } }
 
 .go {
   grid-area: go; }
   .go > a > img {
     height: 208px;
     width: 340px;
-    margin: -50px -68px 0px -66px; }
+    margin: -50px -68px 0px -66px;
+    /* needed weird margins due to extra whitespace in Go logo file */ }
 
 .kubernetes {
   grid-area: kubernetes; }
